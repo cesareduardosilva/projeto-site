@@ -64,6 +64,8 @@ nav, a {
     text-align: left;
     margin-right: 20px;
     margin-left: 20px;
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
 
 a.link {
