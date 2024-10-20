@@ -1,0 +1,329 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 600px) {
+    .principal {
+         flex-direction: column;
+     }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'android';
+    src: url('fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+:root {
+    --cor0: ;
+    --cor1: ;
+    --cor2: ;
+    --cor3: ;
+    --cor4: ;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive; 
+    --fonte-android: 'android', cursive; 
+
+}
+
+body {
+    background-color: rgba(99, 99, 228, 0.952);
+    margin: 0;
+}
+
+p#sub {
+    font-size: large;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: var(--fonte-padrao);
+}
+
+p#ft {
+    font-size: large;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+header {
+    background-image: linear-gradient(to bottom, rgba(4, 4, 224, 0.945), black) ;
+    font-family: var(--fonte-destaque);
+    font-size: large;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 0px;
+    border: 10px;
+    width: 100%;
+    
+}
+
+nav, a {
+    color: white;
+    text-decoration: none;
+    text-align: left;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+a.link {
+    color: black;
+    font-weight: bolder;
+    margin-left: 0px;
+    margin-right: 0px;
+    text-decoration: none;
+    padding: 2px 6px;
+}
+
+a.link:hover {
+    text-decoration: underline;
+    transition-duration: 1s;
+}
+
+a#login {
+    text-align: right;
+}
+
+a:hover#login {
+    text-decoration: underline;
+    background-color: blue;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition-duration: 0.7s;
+}
+
+a.tt{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+a:hover.tt {
+    text-decoration: underline;
+    background-color: blue;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition-duration: 0.7s;
+}
+
+main {
+    margin: 20px;
+    padding: 20px;
+    border: 10px;
+    background-color: rgba(255, 255, 255, 0.94);
+    color: black;
+}
+
+.principal {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.box {
+    width: auto; 
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box h2 {
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: x-large;
+
+}
+
+p.new{
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+
+}
+
+img.img{
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: block;
+
+}
+
+h1.title {
+    font-family: var(--fonte-padrao);
+    background-image: none;
+}
+
+main h1 {
+    background-image: linear-gradient(to right, rgba(4, 4, 224, 0.945), transparent) ;
+    text-indent: 8px;
+    font-size: 2em;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: var(--fonte-android);
+}
+
+main h2 {
+    background-image: linear-gradient(to right, rgba(4, 4, 224, 0.945), transparent) ;
+    text-indent: 8px;
+    font-size: 1.7em;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: var(--fonte-android);
+}
+
+main h3 {
+    text-indent: 8px;
+    border-radius: 8px;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: var(--fonte-android);
+}
+
+main p {
+    margin-bottom: 15px 15px;
+    text-align: justify;
+    font-size: 1.3em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+aside h3 {
+    background-color: rgba(4, 4, 224, 0.945);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+    text-align: center;
+}
+aside {
+    background-color: rgb(99, 99, 250);
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+aside > ul {
+    list-style-position: inside;
+    columns: 2;
+}
+li {
+    margin-bottom: 10px;
+    font-size: 1em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+div.video {
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 59%;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    position: ;
+}
+
+iframe {
+    display: block;
+    width: 300px;
+    height: 300px;
+    max-width: auto;
+    max-height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+iframe:hover {
+    transform: scale(1.1);
+}
+
+img.foto {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: block;
+}
+
+.container {
+    width: 50%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 97%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    height: 40px;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+.mensagem {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+}
+
+footer {
+    background-image: linear-gradient(to bottom, black, rgba(4, 4, 224, 0.945)); 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: -8px;
+    border: 10px;
+    padding-bottom: 100px;
+}
